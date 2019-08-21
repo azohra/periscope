@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: periscope
+  namespace: periscope
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - periscope-gateway.periscope
+  http:
+  - route:
+    - destination:
+        host: periscope
+        subset: v1
+        port:
+          number: 7000

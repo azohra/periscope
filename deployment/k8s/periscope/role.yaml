@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: periscope
+  name: periscope-default
+rules:
+- apiGroups: ["extensions", "apps", "", "networking.istio.io"]
+  resources: ["pods", "services", "deployments", "virtualservices", "customresourcedefinitions"]
+  verbs: ["get", "watch", "list", "create", "patch"]
+
+  

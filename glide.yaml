@@ -1,0 +1,9 @@
+package: github.com/Ascendance/periscope
+import:
+- package: k8s.io/apiextensions-apiserver
+  subpackages:
+  - pkg/apis/apiextensions/v1beta1
+- package: k8s.io/client-go
+  version: v12.0.0
+  subpackages:
+  - '...'

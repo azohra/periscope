@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: periscope
+  namespace: periscope
+spec:
+  selector:
+    app: periscope
+  ports:
+    - protocol: TCP
+      port: 7000

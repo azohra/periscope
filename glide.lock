@@ -1,0 +1,12 @@
+hash: 9a1a8693a1453252f36bea9fbe92ce48cf70b5b68a839f3f643eaa5bb88569cd
+updated: 2019-08-20T17:20:16.860581-04:00
+imports:
+- name: k8s.io/apiextensions-apiserver
+  version: 47893d27d7f727f4655c192a4dd49ac38fabbb89
+  subpackages:
+  - pkg/apis/apiextensions/v1beta1
+- name: k8s.io/client-go
+  version: 78d2af792babf2dd937ba2e2a8d99c753a5eda89
+  subpackages:
+  - '...'
+testImports: []
